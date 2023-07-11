@@ -10,4 +10,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3.5.3
       - uses: ./hello-world-docker-action
+        id: hello-action
       - run: echo "The time was ${{ steps.hello-action.outputs.time }} when the action said hello"
